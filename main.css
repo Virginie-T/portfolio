@@ -181,11 +181,13 @@ text-align: justify;
 
 
 
-.see-more  {
+.see-more-rome  {
 	display: inline-block;
 	width: 100px;
 	height: 100px;
 	position: absolute;
+	margin-left: 80%;
+	margin-top: -315px;
 }
 
 
@@ -193,6 +195,8 @@ text-align: justify;
 width: 60%;
 margin: -450px 0 100px 170px;
 display: inline-block;
+background-color: rgba(0, 255, 255, .5)
+
 }
 
   #gallery-rome img {
@@ -252,6 +256,15 @@ padding: 0px 270px 0px 10px;
 text-align: justify;
 }
 
+.see-more-portland  {
+	display: inline-block;
+	width: 100px;
+	height: 100px;
+	position: absolute;
+	margin-left: 80%;
+	margin-top: 375px;
+}
+
 
 #gallery-portland {
 width: 60%;
@@ -278,7 +291,7 @@ background-color: rgba(0, 255, 255, .5)
 
 .seattle-text {
 	border: 3px dotted #FFA200;
-	margin: 30px -250px 0px 150px;
+	margin: 30px 70px 0px 300px;
 	color: #FFFFFF;
 	padding: 20px;
 	background-color: #24485F;
@@ -301,7 +314,7 @@ text-align: justify;
 }
 
 .chemin-seattle {
-	margin-left: -100px;
+	margin-left: 100px;
 	margin-right: 85%;
 	border-left-style: dotted;
 	border-top-style: dotted;
@@ -316,7 +329,7 @@ text-align: justify;
 }
 
 .lign-bottom {
-	width: 100%;
+	width: 120%;
 	height: 3px;
 	background-color: #FFA200;
 	margin-top: -3px;
@@ -325,12 +338,22 @@ text-align: justify;
 
 }
 
+.see-more-seattle  {
+	display: inline-block;
+	width: 100px;
+	height: 100px;
+	position: absolute;
+	margin-left: 80%;
+	margin-top: 500px;
+}
 
 
 #gallery-seattle1 {
 width: 60%;
 margin: 70px 0 0px 170px;
 display: inline-block;
+background-color: rgba(0, 255, 255, .5)
+
 }
 
   #gallery-seattle1 img {
@@ -343,9 +366,11 @@ display: inline-block;
 
 
   #gallery-seattle2 {
-width: 100%;
-margin: 30px 0 100px 0px;
+width: 60%;
+margin: 30px 0 100px 170px;
 display: inline-block;
+background-color: rgba(0, 255, 255, .5)
+
 }
   #gallery-seattle2 img {
     max-width: 100%;
