@@ -12,6 +12,9 @@ body {
 
 }
 
+/*********NAVBAR***********/
+
+
 .nav.nav-tabs {
 	float:right;
 	position: fixed;
@@ -31,7 +34,7 @@ body {
 }
 
 
-.lign {
+#lign {
 	width: 100%;
 	height: 3px;
 	background-color: #00FFFF;
@@ -54,24 +57,115 @@ body {
 	padding-right: 30px;
 }
 
-.jumbotron {
-	background-color: #FFA011; /*#FF9900;*/
-	height: 656px;
-	top:50px;
-	position: relative;
 
+
+/*********JUMBOTRON***********/
+
+
+.jumbotron {
+    margin-top: 0px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    z-index: -1;
+    overflow: auto;
+    background-attachment: fixed;
+    background-image: url(img/back-bois2.png)
+}
+
+.jumbotron h1 {
+	font-family: 'Poiret One', cursive;
+	color: #FFFFFF;
+	font-size: 65px;
+	text-align: center;
+	margin-top: 230px;
+	text-shadow: 1px 1px white, -1px -1px #444;
+	z-index: -1;
+}
+
+.jumbotron .graphic {
+    font-family: "kandinsky";
+	color: #FFFFFF;
+	font-size: 50px;
+	text-align: center;
+	text-shadow: 1px 1px white, -1px -1px #000;
+	z-index: 1;
+}
+
+.jumbotron h3 {
+	font-family: 'Poiret One', cursive;
+	color: #FFFFFF;
+	font-size: 50px;
+	text-align: center;
+	margin-top: 15px;
+	text-shadow: 1px 1px white, -1px -1px #444;
+	z-index: 1;
+}
+
+
+
+@font-face { 
+    font-family: "kandinsky";
+    src: url('../font/Kandinsky.ttf');
+}
+
+.losange-jumbotron {
+	display: block;
+	margin-left: auto;
+    margin-right: auto;
+    margin-top: -345px;
+}
+
+/*********ROME***********/
+img {    transition: all 1s ease;
+}
+
+img.rotate:hover {
+
+    transform: rotate(-10deg);
+    z-index: 1;
+    position: absolute;
+    border-style: solid;
+    border-color: #00FFFF;
+    border-width: 2px;
+
+}
+
+
+
+.lign-top {
+	width: 100%;
+	height: 3px;
+	background-color: #FFA200;
+	top: 43px;
+	margin-top: -30px;
+
+}
+
+.chemin-rome {
+	width: 1px;
+	height: 550px;
+	margin-left: 80%;
+	border-right-style: dotted;
+	border-bottom-style: dotted;
+	border-width: 3px;
+	border-color: #FFA200;
+	padding: 90px;
+	margin-right: 40px;
 }
 
 .rome-text {
 	border: 3px dotted #FFA200;
-	margin: 330px 200px 200px 70px;
+	margin: -170px 200px 200px 70px;
 	color: #FFFFFF;
 	padding: 20px;
 	display: inline-block;
+	background-color: #24485F;
 }
 
 .rome-text h1 {
 float: left;
+
 border-right-width: 5px;
 border-right-style: solid;
 border-right-color: #FFA200;
@@ -82,14 +176,60 @@ margin: 0;
 .rome-text p {
 padding: 10px 0 0 190px;
 text-align: justify;
+
 }
+
+
+
+.see-more  {
+	display: inline-block;
+	width: 100px;
+	height: 100px;
+	position: absolute;
+}
+
+
+#gallery-rome {
+width: 60%;
+margin: -450px 0 100px 170px;
+display: inline-block;
+}
+
+  #gallery-rome img {
+    max-width: 100%;
+    position: relative;
+}
+
+#gallery-rome .col-xs-3 {
+    padding: 0px; 
+}
+  
+
+
+/*********PORTLAND***********/
+
 
 .portland-text {
 	border: 3px dotted #FFA200;
-	margin: 130px 200px 200px 70px;
+	margin: 90px 230px 200px 40px;
 	color: #FFFFFF;
 	padding: 20px;
 	display: inline-block;
+	background-color: #24485F;
+}
+
+.chemin-portland {
+	
+	margin-left: 8%;
+	border-left-style: dotted;
+	border-bottom-style: dotted;
+	border-top-style: solid;
+	border-width: 3px;
+	border-color: #FFA200;
+	border-top-color: #24485F;
+	padding: 220px;
+	width: 100%;
+	margin-top: -240px;
 }
 
 .portland-text h1 {
@@ -107,15 +247,40 @@ text-align: justify;
 }
 
 
+#gallery-portland {
+width: 60%;
+margin: -390px 0 100px 170px;
+display: inline-block;
+background-color: #00FFFF;
+}
+
+  #gallery-portland img {
+    max-width: 100%;
+    position: relative;
+
+}
+
+#gallery-portland .col-xs-3 {
+    padding: 0px; 
+}
+  
+
+
+/*********SEATTLE***********/
+
+
+
 .seattle-text {
 	border: 3px dotted #FFA200;
-	margin: 330px 200px 20px 70px;
+	margin: 30px -250px 0px 150px;
 	color: #FFFFFF;
 	padding: 20px;
+	background-color: #24485F;
 	display: inline-block;
 }
 
 .seattle-text h1 {
+
 float:left;
 border-right-width: 5px;
 border-right-style: solid;
@@ -129,18 +294,85 @@ padding: 10px 0 0 220px;
 text-align: justify;
 }
 
+.chemin-seattle {
+	margin-left: -100px;
+	margin-right: 85%;
+	border-left-style: dotted;
+	border-top-style: dotted;
+	border-bottom-style: solid;
+	border-width: 3px;
+	border-color: #FFA200;
+	border-bottom-color: #24485F;
+	padding: 200px;
+	margin-top: -400px;
+	z-index: 1;
+
+}
+
+.lign-bottom {
+	width: 100%;
+	height: 3px;
+	background-color: #FFA200;
+	margin-top: -3px;
+	z-index: 2;
+	position: absolute;
+
+}
+
+
+
+#gallery-seattle1 {
+width: 60%;
+margin: 70px 0 0px 170px;
+display: inline-block;
+}
+
+  #gallery-seattle1 img {
+    max-width: 100%;
+}
+
+#gallery-seattle1 .col-xs-3 {
+    padding: 0px; 
+}
+
+
+  #gallery-seattle2 {
+width: 100%;
+margin: 30px 0 100px 0px;
+display: inline-block;
+}
+  #gallery-seattle2 img {
+    max-width: 100%;
+
+}
+
+#gallery-seattle2 .col-xs-3 {
+    padding: 0px; 
+}
+
+
+
+/*********ABOUT ME***********/
+
 .about-me {
+
+	background-color: #24485F;
 	border: 3px solid #00FFFF;
-	margin: 390px 200px 120px 70px;
 	color: #FFFFFF;
 	padding: 20px;
 	display: inline-block;
-	text-align: left;
+	margin-left: 13%;
+    margin-right: 13%;
+    margin-top: 300px;
+	margin-bottom: 120px;
+	padding: 35px;
+	
 
 }
 
 .about-me h1 {
 	
+font-family: "kandinsky";
 float: center;
 text-align: center;
 border-bottom-width: 2.5px;
@@ -156,26 +388,30 @@ margin: 0;
 	padding: 20px 0 0 0;
 }
 
+.box-left {
+	display: block;
+	float: left;
+	border-style: dashed;
+	border-color: #00FFFF;
+	margin-left: -10px;
+	margin-top: -400px;
+	margin-bottom: 100px;
+	padding-top: 350px;
+	padding-right: 200px;
 
-.jumbotron h1 {
-	font-family: 'Poiret One', cursive;
-	color: #FFFFFF;
-	font size: 30px;
-	text-align: center;
-	margin-top: 200px;
-	text-shadow: 1px 1px white, -1px -1px #444;
 }
 
-.jumbotron h2 {
-	font-family: 'Poiret One', cursive;
-	color: #FFFFFF;
-	font size: 15px;
-	text-align: center;
-	margin-top: 30px;
-	text-shadow: 1px 1px white, -1px -1px #444;
+.box-right {
+	display: block;
+	float: right;
+	border-style: dashed;
+	border-color: #00FFFF;
+	margin-right: -10px;
+	margin-top: -400px;
+	margin-bottom: 100px;
+	padding-top: 350px;
+	padding-right: 200px;
 }
-
-
 
 
 
