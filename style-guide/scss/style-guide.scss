@@ -1,0 +1,108 @@
+
+h1 {
+	font-size: 150px;
+	color: #000; 
+	display: block;
+	margin-left: auto;
+    margin-right: auto;
+    margin-top: 70px;
+}
+
+@mixin color {
+	width: 300px;
+	height: 300px;
+	border-style: dotted;
+	border-color: #FFFFFF;
+	border-width: 2px;
+	float: left;
+	margin: 30px;
+
+}
+.orange {
+	@include color;
+	background-color: #FFA200;
+}
+
+.turquoise {
+	@include color;
+	background-color: #00FFFF;
+} 
+
+.dark-turquoise1 {
+	@include color;
+	background-color: #24485F;
+	} 
+
+.dark-turquoise2 {
+	@include color;
+	background-color: #0C3149; 
+	} 
+
+.dark-turquoise3 {
+	@include color;
+	background-color: #032236;
+	}
+
+.blanc {
+	@include color;
+	background-color:  #FFFFFF;
+	}
+
+h2 {
+	font-size: 20px;
+	color: #FFFFFF;
+	text-align: center;
+}
+
+@font-face { 
+    font-family: "kandinsky";
+    src: url('../font/Kandinsky.ttf');
+}
+
+#font {
+
+	h3 {
+	font-size: 50px;
+	color: #000; 
+	display: block;
+	margin-left: auto;
+    margin-right: auto;
+    margin-top: 70px;
+    }
+
+	.first {
+font-family: "Arial";
+	}
+	.sec {
+    font-family: "kandinsky";
+	}
+	.thrid {
+	font-family: 'Poiret One', cursive;
+	}
+}
+
+
+#box {
+border-style: solid;
+border-color: #000;
+
+.small-box {
+	width: 180px;
+height: 180px;
+}
+.big-box {
+	width: 240px;
+height: 240px;
+}
+
+h2 {
+color: #000;
+}
+
+}
+
+
+
+
+
+

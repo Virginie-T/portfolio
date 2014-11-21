@@ -474,9 +474,19 @@ footer {
 /***********************************************************************/
 
 @media screen and (max-width: 1050px)  {
-	.nav.nav-tabs a {
+	
+#gallery-rome {
+margin-top: -1000px;
+margin-left: 50px;
+}
 
-color:black;}
+.chemin-rome {
+	margin-left: 70%;
+}
+
+.rome-text {
+	padding: 15px;
+}
 
 
 }
@@ -491,10 +501,38 @@ color:black;}
 	padding-right: 10px;
 	}
 
+.rome-text h1 {
+	float: center; }
+	.nature-text h1 {
+float: center;
+	}
+	.beach-text h1 {
+		float: center;
+	}
+.rome-text p {
+padding: 0;
+}
+.beach-text p {
+padding: 0;
+}.nature-text p {
+padding: 0;
+}
+
+#gallery-beach1 {
+width: 75%;}
+#gallery-beach2 {
+width: 75%;}
+
+#gallery-rome {
+width: 75%;}
+
+#gallery-nature {
+width: 75%;}
 
 
-
-
+.see-more-beach {
+	margin-right: 500px;
+}
 }
 
 

@@ -1,0 +1,135 @@
+/* line 2, ../scss/style-guide.scss */
+h1 {
+  font-size: 150px;
+  color: #000;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 70px;
+}
+
+/* line 21, ../scss/style-guide.scss */
+.orange {
+  width: 300px;
+  height: 300px;
+  border-style: dotted;
+  border-color: #FFFFFF;
+  border-width: 2px;
+  float: left;
+  margin: 30px;
+  background-color: #FFA200;
+}
+
+/* line 26, ../scss/style-guide.scss */
+.turquoise {
+  width: 300px;
+  height: 300px;
+  border-style: dotted;
+  border-color: #FFFFFF;
+  border-width: 2px;
+  float: left;
+  margin: 30px;
+  background-color: #00FFFF;
+}
+
+/* line 31, ../scss/style-guide.scss */
+.dark-turquoise1 {
+  width: 300px;
+  height: 300px;
+  border-style: dotted;
+  border-color: #FFFFFF;
+  border-width: 2px;
+  float: left;
+  margin: 30px;
+  background-color: #24485F;
+}
+
+/* line 36, ../scss/style-guide.scss */
+.dark-turquoise2 {
+  width: 300px;
+  height: 300px;
+  border-style: dotted;
+  border-color: #FFFFFF;
+  border-width: 2px;
+  float: left;
+  margin: 30px;
+  background-color: #0C3149;
+}
+
+/* line 41, ../scss/style-guide.scss */
+.dark-turquoise3 {
+  width: 300px;
+  height: 300px;
+  border-style: dotted;
+  border-color: #FFFFFF;
+  border-width: 2px;
+  float: left;
+  margin: 30px;
+  background-color: #032236;
+}
+
+/* line 46, ../scss/style-guide.scss */
+.blanc {
+  width: 300px;
+  height: 300px;
+  border-style: dotted;
+  border-color: #FFFFFF;
+  border-width: 2px;
+  float: left;
+  margin: 30px;
+  background-color: #FFFFFF;
+}
+
+/* line 51, ../scss/style-guide.scss */
+h2 {
+  font-size: 20px;
+  color: #FFFFFF;
+  text-align: center;
+}
+
+@font-face {
+  font-family: "kandinsky";
+  src: url("../font/Kandinsky.ttf");
+}
+
+/* line 64, ../scss/style-guide.scss */
+#font h3 {
+  font-size: 50px;
+  color: #000;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 70px;
+}
+/* line 73, ../scss/style-guide.scss */
+#font .first {
+  font-family: "Arial";
+}
+/* line 76, ../scss/style-guide.scss */
+#font .sec {
+  font-family: "kandinsky";
+}
+/* line 79, ../scss/style-guide.scss */
+#font .thrid {
+  font-family: 'Poiret One', cursive;
+}
+
+/* line 85, ../scss/style-guide.scss */
+#box {
+  border-style: solid;
+  border-color: #000;
+}
+/* line 89, ../scss/style-guide.scss */
+#box .small-box {
+  width: 180px;
+  height: 180px;
+}
+/* line 93, ../scss/style-guide.scss */
+#box .big-box {
+  width: 240px;
+  height: 240px;
+}
+/* line 98, ../scss/style-guide.scss */
+#box h2 {
+  color: #000;
+}
