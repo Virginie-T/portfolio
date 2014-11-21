@@ -219,7 +219,7 @@ display: block;
 /*********PORTLAND***********/
 
 
-.portland-text {
+.nature-text {
 	border: 3px dotted #FFA200;
 	margin: 90px 230px 200px 40px;
 	color: #FFFFFF;
@@ -228,7 +228,7 @@ display: block;
 	background-color: #24485F;
 }
 
-.chemin-portland {
+.chemin-nature {
 	
 	margin-left: 8%;
 	border-left-style: dotted;
@@ -242,7 +242,7 @@ display: block;
 	margin-top: -240px;
 }
 
-.portland-text h1 {
+.nature-text h1 {
 float: right;
 border-left-width: 5px;
 border-left-style: solid;
@@ -251,12 +251,12 @@ padding: 25px;
 margin: 0;
 }
 
-.portland-text p {
+.nature-text p {
 padding: 0px 270px 0px 10px;
 text-align: justify;
 }
 
-.see-more-portland  {
+.see-more-nature  {
 	display: inline-block;
 	width: 100px;
 	height: 100px;
@@ -266,20 +266,20 @@ text-align: justify;
 }
 
 
-#gallery-portland {
+#gallery-nature {
 width: 60%;
 margin: -390px 0 100px 170px;
 display: inline-block;
 background-color: rgba(0, 255, 255, .5)
 }
 
-  #gallery-portland img {
+  #gallery-nature img {
     max-width: 100%;
     position: relative;
 
 }
 
-#gallery-portland .col-xs-3 {
+#gallery-nature .col-xs-3 {
     padding: 0px; 
 }
   
@@ -289,7 +289,7 @@ background-color: rgba(0, 255, 255, .5)
 
 
 
-.seattle-text {
+.beach-text {
 	border: 3px dotted #FFA200;
 	margin: 30px 70px 0px 300px;
 	color: #FFFFFF;
@@ -298,7 +298,7 @@ background-color: rgba(0, 255, 255, .5)
 	display: inline-block;
 }
 
-.seattle-text h1 {
+.beach-text h1 {
 
 float:left;
 border-right-width: 5px;
@@ -308,12 +308,12 @@ padding: 20px;
 margin: 0;
 }
 
-.seattle-text p {
+.beach-text p {
 padding: 10px 0 0 220px;
 text-align: justify;
 }
 
-.chemin-seattle {
+.chemin-beach {
 	margin-left: 100px;
 	margin-right: 85%;
 	border-left-style: dotted;
@@ -338,7 +338,7 @@ text-align: justify;
 
 }
 
-.see-more-seattle  {
+.see-more-beach  {
 	display: inline-block;
 	width: 100px;
 	height: 100px;
@@ -348,7 +348,7 @@ text-align: justify;
 }
 
 
-#gallery-seattle1 {
+#gallery-beach1 {
 width: 60%;
 margin: 70px 0 0px 170px;
 display: inline-block;
@@ -356,28 +356,28 @@ background-color: rgba(0, 255, 255, .5)
 
 }
 
-  #gallery-seattle1 img {
+  #gallery-beach1 img {
     max-width: 100%;
 }
 
-#gallery-seattle1 .col-xs-3 {
+#gallery-beach1 .col-xs-3 {
     padding: 0px; 
 }
 
 
-  #gallery-seattle2 {
+  #gallery-beach2 {
 width: 60%;
 margin: 30px 0 100px 170px;
 display: inline-block;
 background-color: rgba(0, 255, 255, .5)
 
 }
-  #gallery-seattle2 img {
+  #gallery-beach2 img {
     max-width: 100%;
 
 }
 
-#gallery-seattle2 .col-xs-3 {
+#gallery-beach2 .col-xs-3 {
     padding: 0px; 
 }
 
