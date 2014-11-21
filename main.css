@@ -394,8 +394,8 @@ background-color: rgba(0, 255, 255, .5)
 	display: inline-block;
 	margin-left: 13%;
     margin-right: 13%;
-    margin-top: 300px;
-	margin-bottom: 120px;
+    margin-top: 150px;
+	margin-bottom: 320px;
 	padding: 35px;
 	
 
@@ -417,15 +417,17 @@ margin: 0;
 .about-me p {
 	text-align: justify;
 	padding: 20px 0 0 0;
+
 }
+
 
 .box-left {
 	display: block;
 	float: left;
 	border-style: dashed;
-	border-color: #00FFFF;
+	border-color: #FFA200;
 	margin-left: -10px;
-	margin-top: -400px;
+	margin-top: -620px;
 	margin-bottom: 100px;
 	padding-top: 350px;
 	padding-right: 200px;
@@ -436,17 +438,40 @@ margin: 0;
 	display: block;
 	float: right;
 	border-style: dashed;
-	border-color: #00FFFF;
+	border-color: #FFA200;
 	margin-right: -10px;
-	margin-top: -400px;
+	margin-top: -620px;
 	margin-bottom: 100px;
 	padding-top: 350px;
 	padding-right: 200px;
 }
 
 
+.icon-contact img {
+	width: 80px;
+	border-radius: 15px;
+margin-top: -200px;
+transition: all 1s ease;
+position: absolute;
+background-color: #24485F;
+}
 
+.fb {
+	margin-left: 36%;
+}
 
+.ldi {
+	margin-left: 54%;
+}
 
+.icon-contact img:hover {
+	transform: rotate(360deg);
+}
 
+footer {
+	background-color: #FFFFFF;
+	text-align: center;
+	color: #24485F;
+	padding: 5px;
+}
 
