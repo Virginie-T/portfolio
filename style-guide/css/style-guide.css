@@ -1,90 +1,92 @@
 /* line 2, ../scss/style-guide.scss */
 h1 {
-  font-size: 150px;
+  font-size: 40px;
   color: #000;
   display: block;
   margin-left: auto;
   margin-right: auto;
   margin-top: 70px;
+  text-align: center;
 }
 
-/* line 21, ../scss/style-guide.scss */
+/* line 22, ../scss/style-guide.scss */
 .orange {
-  width: 300px;
-  height: 300px;
+  width: 150px;
+  height: 150px;
   border-style: dotted;
   border-color: #FFFFFF;
   border-width: 2px;
   float: left;
-  margin: 30px;
+  margin: 15px;
   background-color: #FFA200;
 }
 
-/* line 26, ../scss/style-guide.scss */
+/* line 27, ../scss/style-guide.scss */
 .turquoise {
-  width: 300px;
-  height: 300px;
+  width: 150px;
+  height: 150px;
   border-style: dotted;
   border-color: #FFFFFF;
   border-width: 2px;
   float: left;
-  margin: 30px;
+  margin: 15px;
   background-color: #00FFFF;
 }
 
-/* line 31, ../scss/style-guide.scss */
+/* line 32, ../scss/style-guide.scss */
 .dark-turquoise1 {
-  width: 300px;
-  height: 300px;
+  width: 150px;
+  height: 150px;
   border-style: dotted;
   border-color: #FFFFFF;
   border-width: 2px;
   float: left;
-  margin: 30px;
+  margin: 15px;
   background-color: #24485F;
 }
 
-/* line 36, ../scss/style-guide.scss */
+/* line 37, ../scss/style-guide.scss */
 .dark-turquoise2 {
-  width: 300px;
-  height: 300px;
+  width: 150px;
+  height: 150px;
   border-style: dotted;
   border-color: #FFFFFF;
   border-width: 2px;
   float: left;
-  margin: 30px;
+  margin: 15px;
   background-color: #0C3149;
 }
 
-/* line 41, ../scss/style-guide.scss */
+/* line 42, ../scss/style-guide.scss */
 .dark-turquoise3 {
-  width: 300px;
-  height: 300px;
+  width: 150px;
+  height: 150px;
   border-style: dotted;
   border-color: #FFFFFF;
   border-width: 2px;
   float: left;
-  margin: 30px;
+  margin: 15px;
   background-color: #032236;
 }
 
-/* line 46, ../scss/style-guide.scss */
+/* line 47, ../scss/style-guide.scss */
 .blanc {
-  width: 300px;
-  height: 300px;
+  width: 150px;
+  height: 150px;
   border-style: dotted;
   border-color: #FFFFFF;
   border-width: 2px;
   float: left;
-  margin: 30px;
+  margin: 15px;
   background-color: #FFFFFF;
 }
 
-/* line 51, ../scss/style-guide.scss */
+/* line 52, ../scss/style-guide.scss */
 h2 {
-  font-size: 20px;
+  font-size: 15px;
   color: #FFFFFF;
   text-align: center;
+  padding-top: 50px;
 }
 
 @font-face {
@@ -92,44 +94,48 @@ h2 {
   src: url("../font/Kandinsky.ttf");
 }
 
-/* line 64, ../scss/style-guide.scss */
+/* line 66, ../scss/style-guide.scss */
 #font h3 {
-  font-size: 50px;
+  font-size: 25px;
   color: #000;
   display: block;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 70px;
+  margin-top: 35px;
 }
-/* line 73, ../scss/style-guide.scss */
+/* line 75, ../scss/style-guide.scss */
 #font .first {
   font-family: "Arial";
 }
-/* line 76, ../scss/style-guide.scss */
+/* line 78, ../scss/style-guide.scss */
 #font .sec {
   font-family: "kandinsky";
 }
-/* line 79, ../scss/style-guide.scss */
+/* line 81, ../scss/style-guide.scss */
 #font .thrid {
   font-family: 'Poiret One', cursive;
 }
 
-/* line 85, ../scss/style-guide.scss */
+/* line 87, ../scss/style-guide.scss */
 #box {
   border-style: solid;
   border-color: #000;
+  display: block;
 }
-/* line 89, ../scss/style-guide.scss */
-#box .small-box {
+
+/* line 95, ../scss/style-guide.scss */
+.big-box {
+  border-style: solid;
+  border-color: #000;
   width: 180px;
   height: 180px;
+  margin: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
 }
-/* line 93, ../scss/style-guide.scss */
-#box .big-box {
-  width: 240px;
-  height: 240px;
-}
-/* line 98, ../scss/style-guide.scss */
-#box h2 {
+
+/* line 106, ../scss/style-guide.scss */
+.big-box h2 {
   color: #000;
 }
