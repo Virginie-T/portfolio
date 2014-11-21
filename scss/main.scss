@@ -1,25 +1,83 @@
-/*  
-$orange = #FFA200;
-$turk = #00FFFF; et/ou $rouge = #FF0000; 
-$turkfoncé = #2F5975; ou plus foncé 24485F, plus foncé encore #0C3149
-$blanc = #FFFFFF;
 
-*/
+$orange: #FFA200;
+$turquoise: #00FFFF; 
+$dark-turquoise1: #24485F;
+$dark-turquoise2: #0C3149; 
+$dark-turquoise3: #032236;
+$blanc: #FFFFFF;
+
+
+@mixin jumbotron {
+	font-family: 'Poiret One', cursive;
+	color: $blanc;
+	text-align: center;
+	text-shadow: 1px 1px white, -1px -1px #000;
+
+}
+
+@mixin chemin {
+
+	border-right-style: dotted;
+	border-bottom-style: dotted;
+	border-width: 3px;
+	border-color: $orange;
+}
+
+@mixin see-more {
+	display: inline-block;
+	width: 100px;
+	height: 100px;
+	position: absolute;
+}
+
+@mixin text {
+	border: 3px dotted $orange;
+	color: $blanc;
+	padding: 20px;
+	display: inline-block;
+	background-color: $dark-turquoise1;
+}
+
+@mixin title {
+	border-right-width: 5px;
+border-right-style: solid;
+border-right-color: $orange;
+margin: 0;
+}
+
+@mixin gallery {
+	display: inline-block;
+	background-color: rgba(0, 255, 255, .5);
+	width: 60%;
+}
+
+@mixin box {
+	display: block;
+	border-style: dashed;
+	border-color: #FFA200;
+	margin-top: -620px;
+	margin-bottom: 100px;
+	padding-top: 350px;
+	padding-right: 200px;
+}
+
+
+/****************************/
 
 body {
-	background-color: #24485F;
+	background-color: $dark-turquoise1;
 		position: relative;
 
 }
 
-/*********NAVBAR***********/
+/*********NAVBAR**********************************************/
 
 
 .nav.nav-tabs {
 	position: fixed;
 	top: 0;
 	left: 5%;
-	background-color: #032236;
+	background-color: $dark-turquoise1;
 	margin-top: 5px;
 	border: 1px solid #00FFFF;
 	border-top-right-radius: 5px; 
@@ -36,7 +94,7 @@ body {
 #lign {
 	width: 100%;
 	height: 3px;
-	background-color: #00FFFF;
+	background-color: $orange;
 	position: fixed;
 	top: 48px;
 	z-index: 2;
@@ -45,7 +103,7 @@ body {
 .back-color {
 	width: 100%;
 	height: 50px;
-	background-color: #0C3149;
+	background-color: $dark-turquoise2;
 	position: fixed;
 	z-index: 1;
 }
@@ -58,7 +116,7 @@ body {
 
 
 
-/*********JUMBOTRON***********/
+/*********JUMBOTRON*****************************************************/
 
 
 .jumbotron {
@@ -72,32 +130,24 @@ body {
     background-image: url(img/back-bois2.png)
 }
 
+
 .jumbotron h1 {
-	font-family: 'Poiret One', cursive;
-	color: #FFFFFF;
+		@include jumbotron;
 	font-size: 65px;
-	text-align: center;
 	margin-top: 230px;
-	text-shadow: 1px 1px white, -1px -1px #444;
 }
 
 .jumbotron .graphic {
+		@include jumbotron;
     font-family: "kandinsky";
-	color: #FFFFFF;
 	font-size: 50px;
-	text-align: center;
-	text-shadow: 1px 1px white, -1px -1px #000;
 }
 
 .jumbotron h3 {
-	font-family: 'Poiret One', cursive;
-	color: #FFFFFF;
+		@include jumbotron;
 	font-size: 50px;
-	text-align: center;
 	margin-top: 15px;
-	text-shadow: 1px 1px white, -1px -1px #444;
 }
-
 
 
 @font-face { 
@@ -112,7 +162,7 @@ body {
     margin-top: -345px;
 }
 
-/*********ROME***********/
+/*********ROME*****************************************************/
 img {    transition: all 1s ease;
 }
 
@@ -124,50 +174,43 @@ img.rotate:hover {
     border-style: solid;
     border-color: #00FFFF;
     border-width: 2px;
-
 }
-
 
 
 .lign-top {
 	width: 100%;
 	height: 3px;
-	background-color: #FFA200;
+	background-color: $orange;
 	top: 43px;
 	margin-top: -30px;
 
 }
 
+
 .chemin-rome {
+
+	@include chemin;
 	width: 1px;
 	height: 550px;
 	margin-left: 80%;
-	border-right-style: dotted;
-	border-bottom-style: dotted;
-	border-width: 3px;
-	border-color: #FFA200;
 	padding: 90px;
 	margin-right: 40px;
 }
 
+
+
 .rome-text {
-	border: 3px dotted #FFA200;
 	margin: -170px 200px 200px 70px;
-	color: #FFFFFF;
-	padding: 20px;
-	display: inline-block;
-	background-color: #24485F;
+	@include text;
 }
 
 .rome-text h1 {
+	@include title;
 float: left;
-
-border-right-width: 5px;
-border-right-style: solid;
-border-right-color: #FFA200;
 padding: 25px;
-margin: 0;
+
 }
+
 
 .rome-text p {
 padding: 10px 0 0 190px;
@@ -175,23 +218,16 @@ text-align: justify;
 
 }
 
-
-
 .see-more-rome  {
-	display: inline-block;
-	width: 100px;
-	height: 100px;
-	position: absolute;
+	@include see-more;
 	margin-left: 80%;
 	margin-top: -315px;
 }
 
-
 #gallery-rome {
-width: 60%;
+	@include gallery;
+
 margin: -450px 0 100px 170px;
-display: inline-block;
-background-color: rgba(0, 255, 255, .5)
 
 }
 
@@ -212,40 +248,32 @@ display: block;
 	margin-left: auto;
     margin-right: auto;}
 
-/*********PORTLAND***********/
+/*********NATURE*****************************************************/
 
 
 .nature-text {
-	border: 3px dotted #FFA200;
 	margin: 90px 230px 200px 40px;
-	color: #FFFFFF;
-	padding: 20px;
-	display: inline-block;
-	background-color: #24485F;
+	@include text;
+
 }
 
 .chemin-nature {
-	
+	@include chemin;
 	margin-left: 8%;
-	border-left-style: dotted;
-	border-bottom-style: dotted;
 	border-top-style: solid;
-	border-width: 3px;
-	border-color: #FFA200;
-	border-top-color: #24485F;
+	border-top-color: $dark-turquoise1;
 	padding: 220px;
 	width: 100%;
 	margin-top: -240px;
 }
 
 .nature-text h1 {
+		@include title;
+
 float: right;
-border-left-width: 5px;
-border-left-style: solid;
-border-left-color: #FFA200;
 padding: 25px;
-margin: 0;
 }
+
 
 .nature-text p {
 padding: 0px 270px 0px 10px;
@@ -253,20 +281,17 @@ text-align: justify;
 }
 
 .see-more-nature  {
-	display: inline-block;
-	width: 100px;
-	height: 100px;
-	position: absolute;
+		@include see-more;
 	margin-left: 80%;
 	margin-top: 375px;
 }
 
 
 #gallery-nature {
-width: 60%;
+	@include gallery;
+
 margin: -390px 0 100px 170px;
-display: inline-block;
-background-color: rgba(0, 255, 255, .5)
+
 }
 
   #gallery-nature img {
@@ -281,27 +306,20 @@ background-color: rgba(0, 255, 255, .5)
   
 
 
-/*********SEATTLE***********/
+/*********BEACH*****************************************************/
 
 
 
 .beach-text {
-	border: 3px dotted #FFA200;
 	margin: 30px 70px 0px 300px;
-	color: #FFFFFF;
-	padding: 20px;
-	background-color: #24485F;
-	display: inline-block;
+	@include text;
+
 }
 
 .beach-text h1 {
-
+	@include title;
 float:left;
-border-right-width: 5px;
-border-right-style: solid;
-border-right-color: #FFA200;
 padding: 20px;
-margin: 0;
 }
 
 .beach-text p {
@@ -310,14 +328,11 @@ text-align: justify;
 }
 
 .chemin-beach {
+	@include chemin;
 	margin-left: 100px;
 	margin-right: 85%;
-	border-left-style: dotted;
-	border-top-style: dotted;
 	border-bottom-style: solid;
-	border-width: 3px;
-	border-color: #FFA200;
-	border-bottom-color: #24485F;
+	border-bottom-color: $dark-turquoise1;
 	padding: 200px;
 	margin-top: -400px;
 	z-index: 1;
@@ -327,7 +342,7 @@ text-align: justify;
 .lign-bottom {
 	width: 120%;
 	height: 3px;
-	background-color: #FFA200;
+	background-color: $orange;
 	margin-top: -3px;
 	z-index: 2;
 	position: absolute;
@@ -335,20 +350,17 @@ text-align: justify;
 }
 
 .see-more-beach  {
-	display: inline-block;
-	width: 100px;
-	height: 100px;
-	position: absolute;
+		@include see-more;
 	margin-left: 80%;
 	margin-top: 500px;
 }
 
 
 #gallery-beach1 {
-width: 60%;
+	@include gallery;
+
 margin: 70px 0 0px 170px;
-display: inline-block;
-background-color: rgba(0, 255, 255, .5)
+
 
 }
 
@@ -362,10 +374,10 @@ background-color: rgba(0, 255, 255, .5)
 
 
   #gallery-beach2 {
-width: 60%;
+	@include gallery;
+
 margin: 30px 0 100px 170px;
-display: inline-block;
-background-color: rgba(0, 255, 255, .5)
+
 
 }
   #gallery-beach2 img {
@@ -379,13 +391,13 @@ background-color: rgba(0, 255, 255, .5)
 
 
 
-/*********ABOUT ME***********/
+/*********ABOUT ME*****************************************************/
 
 .about-me {
 
-	background-color: #24485F;
-	border: 3px solid #00FFFF;
-	color: #FFFFFF;
+	background-color: $dark-turquoise1;
+	border: 3px solid $turquoise;
+	color: $blanc;
 	padding: 20px;
 	display: inline-block;
 	margin-left: 13%;
@@ -404,7 +416,7 @@ float: center;
 text-align: center;
 border-bottom-width: 2.5px;
 border-bottom-style: dotted;
-border-bottom-color: #00FFFF;
+border-bottom-color: $turquoise;
 padding: 0 0px 20px 0px;
 margin: 0;
 
@@ -418,28 +430,17 @@ margin: 0;
 
 
 .box-left {
-	display: block;
+	@include box;
 	float: left;
-	border-style: dashed;
-	border-color: #FFA200;
 	margin-left: -10px;
-	margin-top: -620px;
-	margin-bottom: 100px;
-	padding-top: 350px;
-	padding-right: 200px;
+	
 
 }
 
 .box-right {
-	display: block;
+		@include box;
 	float: right;
-	border-style: dashed;
-	border-color: #FFA200;
 	margin-right: -10px;
-	margin-top: -620px;
-	margin-bottom: 100px;
-	padding-top: 350px;
-	padding-right: 200px;
 }
 
 
@@ -449,7 +450,7 @@ margin: 0;
 margin-top: -200px;
 transition: all 1s ease;
 position: absolute;
-background-color: #24485F;
+background-color: $dark-turquoise1;
 }
 
 .fb {
@@ -465,13 +466,13 @@ background-color: #24485F;
 }
 
 footer {
-	background-color: #FFFFFF;
+	background-color: $blanc;
 	text-align: center;
-	color: #24485F;
+	color: $dark-turquoise1;
 	padding: 5px;
 }
 
-/***********************************************************************/
+/************************************MEDIA BREACKPOINTS*****************************************************************************/
 
 @media screen and (max-width: 1050px)  {
 	.nav.nav-tabs a {
